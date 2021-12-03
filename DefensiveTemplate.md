@@ -9,16 +9,20 @@
 
 ### Network Topology
 
-The following machines were identified on the network:
-- Name of VM 1
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
+The following machines were identified on the network (Refer to the screenshot below the table to see the output of the network scan command):
+
+| Name  	| Operating System  	| Purpose  	| IP Address   	|
+|---	|---	|---	|---	|
+| ELK  	| Linux   	| ELK Server to gather, analyze and perform an elastic search of the logs from target machines.   	| 192.168.1.100  	|
+| Capstone  	| Linux  	| Vulnerable machine to test and perform different attacks.  	| 192.168.1.105  	|
+| Target 1  	| Linux   	| Vulnerable machine with an installation of WordPress. Machine on which attacks need to be performed in order to extract information.  	| 192.168.1.110  	|
+| Target 2  	| Linux  	| Vulnerable machine with an installation of WordPress. Machine on which attacks need to be performed in order to extract information.  	| 192.168.1.115  	|
+
+#### Screenshot
+
+The following screenshot depicts the result of the network scan using the command `nmap -sV 192.168.1.0/24`. This command scans the entire range of IP addresses as indicated:
+
+![Network Scan](images/NetworkScan.png)
 
 ### Description of Targets
 _TODO: Answer the questions below._
