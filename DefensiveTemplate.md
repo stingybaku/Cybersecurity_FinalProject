@@ -45,6 +45,8 @@ This alert is implemented as follows:
   - **Threshold**: 400 (to account for all the http error responses)
   - **Vulnerability Mitigated**: DDoS
   - **Reliability**: High
+ 
+![Alert 1](images/alert1.png)
 
 #### HTTP Request Size Monitor
 This alert is implemented as follows:
@@ -53,9 +55,13 @@ This alert is implemented as follows:
   - **Vulnerability Mitigated**: DDoS
   - **Reliability**: Medium
 
+![Alert 2](images/alert2.png)
+
 #### CPU Usage Monitor
 This alert is implemented as follows:
   - **Metric**: Alert when the percentage of total CPU usage is above the threshold in the last 5 minutes.
   - **Threshold**: 0.5
   - **Vulnerability Mitigated**: Malware
   - **Reliability**: Low
+
+![Alert 3](images/alert3.png)
